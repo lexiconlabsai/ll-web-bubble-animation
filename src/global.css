@@ -1,0 +1,64 @@
+@import 'simplebar-react/dist/simplebar.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#leva__root {
+  display: none;
+}
+
+:root {
+  --brand-1: #36d96b;
+  --brand-2: #36d96b;
+  --brand-3: #36d96b;
+  --main-text-color: #fff;
+  --marked-color: #111;
+  --btn-primary-color: #111;
+}
+
+body {
+  background-color: #fff !important;
+}
+
+ul,
+ol {
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.hide-scrollbar div {
+  /* Works on Chrome, Edge, and Safari */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar div::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.global-error {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: fit-content;
+  background-color: #fda4af;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.S--focusing .MessageList {
+  margin-top: 0;
+}
+
+.PullToRefresh {
+  overflow-y: auto;
+}
